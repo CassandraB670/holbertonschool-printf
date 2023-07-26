@@ -2,7 +2,7 @@
 
 /**
  * _strlen - return the lenght of the string
- * @s: the string
+ * @str: the string
  * Return: the lenght
  */
 
@@ -19,7 +19,7 @@ int _strlen(const char *str)
 }
 
 /**
- * print - print char
+ * _print - print char
  * @str: string
  * Return: length of the string
  */

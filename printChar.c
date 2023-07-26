@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_char - print a character
+ * printChar - print a character
  * @list: list
  * Return: 1
  */

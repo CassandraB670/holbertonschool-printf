@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_string - print a string
+ * printString - print a string
  * @list: list
- * Return string length
+ * Return: string length
  */
 
 int printString(va_list list)
