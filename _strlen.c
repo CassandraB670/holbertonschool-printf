@@ -35,4 +35,3 @@ int _print(char *str)
 	}
 	return (i);
 }
-
