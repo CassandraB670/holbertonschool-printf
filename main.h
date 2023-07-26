@@ -1,6 +1,6 @@
 #ifndef MAIN_H_
 #define MAIN_H_
-#define NUM_FORMATS 2
+#define NUM_FORMATS 4
 
 /****** libraries ******/
 
@@ -30,9 +30,11 @@ int _putchar(char);
 
 /****** structure ******/
 
-/*
+/**
  * struct _format - typedef struct
+ *
  * @type: format
+ *
  * @f: the function associated
  */
 
