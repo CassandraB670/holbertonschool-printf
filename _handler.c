@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _handler - Format controller
- * @str: String format
- * @list: List of arguments
+ * _handler - format controller
+ * @str: string format
+ * @list: list of arguments
  *
- * Return: Total size of arguments with the total size of the base string
+ * Return: total size of arguments with the total size of the base string
  **/
 int _handler(const char *str, va_list list)
 {
@@ -33,10 +33,10 @@ int _handler(const char *str, va_list list)
 }
 
 /**
- * percentHandler - Controller for percent format
- * @str: String format
- * @list: List of arguments
- * @i: Iterator
+ * percentHandler - controler for percent format
+ * @str: string format
+ * @list: list of arguments
+ * @i: iterator
  *
  * Return: Size of the numbers of elements printed
  **/
@@ -57,7 +57,6 @@ int percentHandler(const char *str, va_list list, int *i)
 		_putchar('%');
 		return (1);
 	}
-
 	for (j = 0; j < NUM_FORMATS; j++)
 	{
 		if (str[*i] == formats[j].type)

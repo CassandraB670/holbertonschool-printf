@@ -30,6 +30,12 @@ int _putchar(char);
 
 /****** structure ******/
 
+/*
+ * struct _format - typedef struct
+ * @type: format
+ * @f: the function associated
+ */
+
 typedef struct _format
 {
 	char type;
