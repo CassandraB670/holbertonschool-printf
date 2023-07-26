@@ -1,6 +1,6 @@
 #ifndef MAIN_H_
 #define MAIN_H_
-#define NUM_FORMATS 4
+#define NUM_FORMATS 2
 
 /****** libraries ******/
 
