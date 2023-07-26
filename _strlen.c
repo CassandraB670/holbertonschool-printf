@@ -6,16 +6,16 @@
  * Return: the lenght
  */
 
-int _strlen(const char *s)
+int _strlen(const char *str)
 {
-	int lenght = 0;
+	int i = 0;
 
-	while (*s != '\0')
+	while (str[i] != '\0')
 	{
-		s++;
-		lenght++;
+		i++;
 	}
-	return (lenght);
+
+	return (i);
 }
 
 /**
@@ -26,11 +26,12 @@ int _strlen(const char *s)
 
 int _print(char *str)
 {
-	int i;
+	int i = 0;
 
-	for (i = 0; str[i] != '\0'; i++)
+	while (str[i] != '\0')
 	{
 		_putchar(str[i]);
+		i++;
 	}
 	return (i);
 }
