@@ -1,0 +1,58 @@
+.TH _printf 3 “Date” “GNU” “_Printf Man Page”
+.SH NAME
+.B _printf
+Function that copies what printf function make in the standard library
+
+.SH LIBRARY
+_printf use <stdarg.h> <stdlib.h> <unistd.h> and <stdio.h>
+
+.SH SYNOPSIS
+_printf FORMAT [ARGUMENT]
+.PP
+Int _printf(const char *format, …);
+
+.SH DESCRIPTION
+.PP
+In the C programming language, printf is used to print character, string, float, integer, octal or hexadecimal values onto the output.
+.PP
+_printf() works un the same way as the printf() function. She uses variadic functions
+
+.SH CONVERSION CHARACTERS
+.B The conversion specifier and their meaning are:
+
+.IP -d,i
+The int argument is converted to signed decimal notation.
+
+.IP -c
+The int argument is converted to an unsigned char, and the resulting character is written.
+
+.IP -s
+The character from the array are written up to (but not including) a terminating null bytes ('\0').
+
+.SH RETURN VALUE
+.PP
+Return 1 if find a specifier with percent.
+Return -1 if error or pointer null.
+Return 2 if the program find nothing or just '%'.
+
+.SH EXAMPLES
+
+.IP -print a string.
+_printf("This is a string");
+_printf("%s\n", "I am a string too!");
+
+.IP print char.
+_printf("Character:[%c]\n", 'H');
+
+.IP -print integer.
+_printf("%d, %i\n", 2, 5);
+
+.SH BUGS
+
+No known bugs.
+
+.SH AUTHOR
+
+Cassandra Boudier & Mickael Tartar
+
+Copyright © 2023 Holberton School Lille
