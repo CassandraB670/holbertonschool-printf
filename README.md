@@ -100,7 +100,7 @@ int main(void)
 }
 ```
 
-# Outcput Check #
+# Output Check #
 
 After compiling, your output should look something like what’s displayed below.
 
