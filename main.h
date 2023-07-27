@@ -1,6 +1,6 @@
 #ifndef MAIN_H_
 #define MAIN_H_
-#define NUM_FORMATS 2
+#define NUM_FORMATS 4
 
 /****** libraries ******/
 
@@ -24,6 +24,8 @@ int percentHandler(const char *str, va_list list, int *i);
 /* printers */
 int printString(va_list);
 int printChar(va_list);
+int printDecimal(va_list);
+int printInteger(va_list);
 
 /* putchar.c */
 int _putchar(char);
