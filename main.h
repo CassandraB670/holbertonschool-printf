@@ -33,6 +33,7 @@ int printHexaUpper(va_list);
 
 /* putchar.c */
 int _putchar(char);
+int _buffer(char);
 
 /****** structure ******/
 
