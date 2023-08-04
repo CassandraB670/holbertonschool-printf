@@ -10,5 +10,28 @@
 
 int _putchar(char c)
 {
-	return (write(1, &c, 1));
+	return (_buffer(c));
+}
+
+/**
+ * _buffer - save the caracter in a buffer
+ * @c: character
+ * Return: 1
+ */
+
+int _buffer(char c)
+{
+	static char buffering[1024];
+	static int index;
+
+	if (c == -1 || index == 1024)
+	{
+		write(1, buffering, index);
+		index = 0;
+	}
+
+	if (c != -1)
+		buffering[index++] = c;
+
+	return (1);
 }
