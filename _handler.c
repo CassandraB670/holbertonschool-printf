@@ -42,10 +42,11 @@ int _handler(const char *str, va_list list)
  **/
 int percentHandler(const char *str, va_list list, int *i)
 {
-	int size, j;
+	int size, j, numberFormats;
 	format formats[] = {
 		{'s', printString}, {'c', printChar},
 		{'d', printDecimal}, {'i', printInteger},
+		{'b', printBinary}
 	};
 
 	*i = *i + 1;
@@ -58,7 +59,8 @@ int percentHandler(const char *str, va_list list, int *i)
 		_putchar('%');
 		return (1);
 	}
-	for (j = 0; j < NUM_FORMATS; j++)
+	numberFormats = sizeof(formats) / sizeof(formats[0]);
+	for (size = j = 0; j < numberFormats; j++)
 	{
 		if (str[*i] == formats[j].type)
 		{

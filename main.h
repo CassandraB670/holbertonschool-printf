@@ -1,6 +1,5 @@
 #ifndef MAIN_H_
 #define MAIN_H_
-#define NUM_FORMATS 4
 
 /****** libraries ******/
 
@@ -16,7 +15,7 @@ int _printf(const char *format, ...);
 /* tools */
 int _strlen(const char *s);
 int _print(char *);
-
+char *_itoa(long int, int);
 /* handler.c */
 int _handler(const char *str, va_list);
 int percentHandler(const char *str, va_list list, int *i);
@@ -26,7 +25,7 @@ int printString(va_list);
 int printChar(va_list);
 int printDecimal(va_list);
 int printInteger(va_list);
-
+int printBinary(va_list);
 /* putchar.c */
 int _putchar(char);
 
