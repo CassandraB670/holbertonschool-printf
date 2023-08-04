@@ -47,7 +47,8 @@ int percentHandler(const char *str, va_list list, int *i)
 		{'s', printString}, {'c', printChar},
 		{'d', printDecimal}, {'i', printInteger},
 		{'b', printBinary}, {'u', printUnsigned},
-		{'o', printOctal}, {'x', printHexaLower}
+		{'o', printOctal}, {'x', printHexaLower},
+		{'X', printHexaUpper}
 	};
 
 	*i = *i + 1;
