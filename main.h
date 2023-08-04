@@ -28,6 +28,7 @@ int printInteger(va_list);
 int printBinary(va_list);
 int printUnsigned(va_list);
 int printOctal(va_list);
+int printHexaLower(va_list);
 
 /* putchar.c */
 int _putchar(char);
